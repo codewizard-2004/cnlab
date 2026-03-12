@@ -65,6 +65,7 @@ int main(){
                 drop = rand()%4;
                 if (drop == 4){
                     printf("SERVER: ACKNOWLEDGEMENT LOST FOR FRAME %d\n", frame_recv.seq);
+                    continue;
                 }
                 
                 expected_frame++;
